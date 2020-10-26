@@ -1,0 +1,113 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height :59px;
+}
+/*Navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute; 
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-2;
+    opacity:4;
+}
+/*Navigation bar: logo and image*/
+#logo{
+    margin:3px 45px;
+}
+#logo img {
+    height: 150px;
+    margin:-3px 5px;
+}
+/*Navigation Bar: List styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display:flex;
+    font-family:'Oxygen', sans-serif;
+}
+#navbar ul li{
+   /*color:white; */
+   list-style: none;
+   font-size:1.3rem;    
+}
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration:none;    
+ }
+ #navbar ul li a:hover {
+    color: black;
+    background-color: ghostwhite;
+ }
+ /*home section*/
+ #home{
+     display:flex;
+     flex-direction:column;
+     height:770px;
+     padding:3px 200px;
+     justify-content:center;
+     align-items:center;
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('../images/bg1.jpg') no-repeat center center/cover;
+    height:100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-2;
+    opacity:3;
+}
+#home h1{
+    color:yellow;
+    text-align: center;
+    font-size: 2.7rem ;
+    font-family: 'Oxygen', sans-serif;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family:'Great Vibes', cursive; 
+}
+/*service section*/
+#services{
+    margin:90px;
+    display:flex;
+}
+#services .box{
+    border: 3px solid black;
+    padding:34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: whitesmoke;
+}
+#services .box img{
+    height:160px;
+    height:160px;
+    margin:auto;
+    display:block;
+}
+#service .boxp{
+    font-family:'Great Vibes', cursive;   
+}
